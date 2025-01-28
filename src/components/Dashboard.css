@@ -1,0 +1,103 @@
+/* Dashboard.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #74ebd5, #9face6); /* Gradient background */
+    min-height: 100vh; /* Ensure the background covers the full screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard-container {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.dashboard-title {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.illness-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.illness-item {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.illness-info {
+    margin-bottom: 10px;
+}
+
+.degree-bar {
+    margin-top: 5px;
+    height: 25px;
+    border-radius: 12px;
+    color: white;
+    font-size: 0.9rem;
+    text-align: center;
+    line-height: 25px;
+    font-weight: bold;
+}
+
+.degree-bar:hover {
+    filter: brightness(1.2); /* Brightens the bar slightly on hover */
+    transition: filter 0.3s ease; /* Smooth transition effect */
+}
+
+
+.view-course-button {
+    display: inline-block;
+    padding: 15px 30px; /* Bigger buttons */
+    background-color: #ff7f50;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px; /* Rounded corners */
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.view-course-button:hover {
+    background-color: #ff6347; /* Slightly darker on hover */
+    transform: scale(1.05); /* Subtle scaling effect */
+}
+
+.view-course-button:active {
+    transform: scale(0.98); /* Pressed effect */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .dashboard-container {
+        padding: 15px;
+        width: 90%; /* Adjust container width for smaller screens */
+    }
+
+    .dashboard-title {
+        font-size: 2rem; /* Adjust title font size */
+    }
+
+    .view-course-button {
+        font-size: 1rem; /* Reduce button size */
+        padding: 10px 20px; /* Adjust button padding */
+    }
+
+    .degree-bar {
+        height: 20px; /* Slightly reduce the height of the degree bar */
+        font-size: 0.8rem; /* Adjust font size for percentage */
+    }
+}
